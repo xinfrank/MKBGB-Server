@@ -50,5 +50,3 @@ def reddit_keyboard_scraper():
             # error will occur if post is not in gallery form and if $ is missing from stickied comment
             print("error scraping from {}".format("https://www.reddit.com" + submission.permalink))
             continue
-
-reddit_keyboard_scraper()
