@@ -37,7 +37,7 @@ def reddit_keyboard_scraper():
             origin = "https://www.reddit.com" + submission.permalink
 
             info = submission.comments[0].body
-            info = info.replace("**", "").replace("---", "\\n")
+            info = info.replace("**", "").replace("---", "\n")
 
             price = (max([float(i) for i in pattern.findall(info)]))
 
