@@ -38,7 +38,7 @@ def reddit_keyboard_scraper():
 
             info = submission.comments[0].body
             info = info.replace("**", "")
-            info = info.replace(" --- ", "\n")
+            info = info.replace("---", "\n")
 
             price = (max([float(i) for i in pattern.findall(info)]))
 
